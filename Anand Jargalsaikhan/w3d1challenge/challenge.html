@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <form method="post" action="/index.html">
+            <fieldset>
+                <legend>Tell us about yourself</legend>
+                <label for="name"> username</label>
+                <input type="text" id="name" name="user_name" placeholder="username"> 
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password" name="user_password">
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="name" > 
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female
+            </fieldset>
+            <fieldset>
+                <legend>Bio</legend>
+                <label for="comment">Comment</label>
+                <textarea name="user_comment" id="comment" placeholder="comment"></textarea>  
+                <label for="job">Job Role</label>
+                <select name="user_job" id="job">   
+                    <optgroup label="hahaha">
+                        <option value="haha1"> haha1</option>
+                        <option value="haha2"> haha2</option>
+                        <option value="haha3"> haha3</option>
+                        <option value="haha"4> haha4</option>
+                    </optgroup>
+                    <optgroup label="hohoho">
+                    <option> hoho1</option>
+                    <option> hoho2</option>
+                    <option> hoho3</option>
+                     </optgroup>     
+                </select>
+            </fieldset>
+            <button type="submit"> Submit Comment</button>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
