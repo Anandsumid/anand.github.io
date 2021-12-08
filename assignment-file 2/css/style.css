@@ -1,0 +1,589 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font {
+    font-size: 3rem;
+    color: #00152f;
+}
+
+.fontColor {
+    color: #00152f;
+}
+
+.font2 {
+    font-size: 2.2rem;
+    color: #00152f;
+}
+
+.font3 {
+    font-size: 1.25rem;
+    color: #5b5b5b;
+}
+
+.backgroundColor {
+    background-color: #e0f7ff;
+}
+
+.backgroundPadding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.backgroundMargin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.titleMargin {
+    margin-top: 50px;
+}
+
+.paraColor {
+    color: #5b5b5b;
+    margin-top: 10px;
+}
+
+.sectionMargin {
+    margin-top: 30px;
+}
+
+.navbarSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* page1-6 css */
+
+
+.backPagePadding {
+    margin: 150px auto;
+}
+
+
+
+/* Header navigation */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.clane {
+    background-color: #f3dcb2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* section 1 */
+
+
+.sectionPosition {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.item {
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-left: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    list-style: none;
+}
+
+.item:hover {
+    background-color: #f58e07;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.section1Image {
+    position: relative;
+    bottom: 0;
+    height: 500px;
+    width: 700px;
+
+}
+
+
+/*  section2 */
+.button {
+    color: #f58e07;
+    text-decoration: none;
+    list-style: none;
+}
+
+.imageBorder {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+/* section3 */
+
+.iconBackColor {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.iconImage {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* section4 */
+
+.section4pics {
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section4pic {
+    position: relative;
+    width: 100%;
+
+}
+
+.section4pic::after {
+    content: "";
+    display: block;
+    background-color: #f58e07;
+    background-size: cover;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    overflow: hidden;
+    mix-blend-mode: mixed;
+}
+
+/* section 5*/
+/* .section5 {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #e0f7ff;
+    border-radius: 20px;
+
+} */
+
+.titleSize {
+    margin-left: 20px;
+}
+
+.item2 {
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #5b5b5b;
+    padding: 10px 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #5b5b5b;
+    margin: 20px 10px 0px 10px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.item2:hover {
+    background-color: white;
+    border: white;
+    color: #f58e07;
+}
+
+.section5pics {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section5pic {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.section5pic::after {
+    content: "";
+    display: block;
+    background-color: #f58e07;
+    background-size: cover;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+
+.section5backy {
+    position: relative;
+    background-color: #e0f7ff;
+}
+
+.section5back::before {
+    content: "";
+    position: absolute;
+    background-image: url(/images/Ribbon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 180px;
+    top: -15px;
+    right: -15px;
+    z-index: 2;
+}
+
+/* .sectionThree {
+    display: flex;
+    justify-content: space-between;
+} */
+
+
+
+
+/* section6 */
+.section6back {
+    position: relative;
+    background-color: #f58e07;
+    margin: 100px auto;
+    z-index: 0;
+    height: 100%;
+}
+
+.zurag {
+    position: absolute;
+    background-image: url(/images/experience-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50%;
+    height: 40vh;
+
+}
+
+
+@media (max-width: 991.98px) {
+    .zurag {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+
+    }
+}
+
+.section6Margin {
+    color: white;
+    text-align: start;
+    margin-left: 30px;
+    height: 40vh;
+
+}
+
+
+
+.rob {
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    color: #eeac33;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+/* section 7  */
+.Paragraph {
+    position: relative;
+    z-index: 1;
+}
+
+.section1 {
+    margin-top: 100px;
+}
+
+.section7Pro {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+
+
+.pic1 {
+    position: relative;
+    z-index: -1;
+}
+
+.shugam {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    border: 10px circle;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+}
+
+.pic1head {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 58px;
+    z-index: 2;
+}
+
+.play {
+    content: "";
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+    z-index: 2;
+    color: white;
+    font-size: 24px;
+}
+
+.playButton {
+    background-color: #f58a07;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+/* section8 */
+.news {
+    margin: 30px auto;
+}
+
+.cardy {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.section8Margin {
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/* Footer */
+
+footer {
+    position: relative;
+    background-color: #063255;
+    padding: 60px 0;
+    color: white;
+    z-index: 1;
+}
+
+footer a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+
+}
+
+footer::before {
+    content: " ";
+    background-color: #f58a07;
+    position: absolute;
+    width: 2%;
+    height: 120px;
+    border-radius: 0 20px 0 0;
+    bottom: 0px;
+    left: 0;
+    z-index: 2;
+}
+
+footer::after {
+    content: "";
+    background-color: #f58a07;
+    position: absolute;
+    width: 3%;
+    height: 150px;
+    border-radius: 20px 0 0 20px;
+    top: 30px;
+    right: 0;
+    z-index: 2;
+}
+
+.footerButton {
+    background-color: #f58a07;
+    color: white;
+}
+
+.footerEmail {
+    padding: 10px 15px 10px 50px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.footerPriText {
+    text-align: end;
+    list-style: none;
+
+}
+
+.footerPriText2 {
+    text-align: start;
+    list-style: none;
+
+}
+
+.footerPriMargin {
+    margin-top: 10px;
+}
+
+
+
+
+
+.tags img {
+    filter: grayscale(1);
+    border-radius: 20px;
+
+
+}
+
+.tags:hover img {
+    filter: grayscale(0);
+}
+
+.out12 {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.out12::after {
+    content: "";
+    position: absolute;
+    background-color: #f58a07;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    z-index: 2;
+    opacity: .5;
+}
+
+.outLeft {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.outLeft::after {
+    content: "";
+    position: absolute;
+    background-color: #f58a07;
+    top: 120px;
+    left: -25px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    opacity: .8;
+    border-radius: 20px;
+}
+
+.outRight {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.outRight::after {
+    content: "";
+    position: absolute;
+    background-color: #f58a07;
+    top: 180px;
+    right: -25px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    opacity: .8;
+    border-radius: 20px;
+}
+
+.applySection {
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+
+.page4Image {
+    width: 100%;
+    height: 70vh;
+    border-radius: 20px;
+
+}
+
+.section2size {
+    max-width: 1000px;
+}
+
+.page4Padding {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.listsize {
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.listsize:hover {
+    color: #f58a07;
+}

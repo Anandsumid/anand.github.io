@@ -1,0 +1,23 @@
+{
+    "message" : "success",
+    "data": [
+        {
+            "id": 1, 
+            "title": "Invoicing",
+            "icon": "/images/Icon-layer.png",
+            "content": "Lorem nc eget mauris in massa blandit lobortis sit am"
+        },
+        {
+            "id": 2, 
+            "title": "Support",
+            "icon": "/images/Icon-wizard.png",
+            "content": "Lorem nc eget mauris in massa blandit lobortis sit am"
+        },
+        {
+            "id": 3, 
+            "title": "Surveying",
+            "icon": "/images/Icon-heart.png",
+            "content": "Lorem nc eget mauris in massa blandit lobortis sit am"
+        }
+    ] 
+}
