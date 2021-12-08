@@ -219,32 +219,7 @@ p1{
 .clients{
     display: flex;
 }
-.play-vdo{
-    position: relative;
-    border-radius: 20px;
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-}
-.play-vdo::before{
-    content: "Play Video";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    color: white;
-    top: 82%;
-    left: 20%;
-}
-.play-vdo::after{
-    background-image: url(/images/play-icon.svg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    content: "";
-    position: absolute;
-    left: 13%;
-    top: 83%;
-}
+
 p2{
     padding: 2vh;
     border-radius: 2vh;
@@ -438,14 +413,14 @@ p4{float: right;}
 .cardd{
     border-radius: 8px;
     background-color: white;
-    padding: 0px 0px;
+    padding: 0px 0px 40px 0px;
     margin: 10px 0px;  
     height: 100%;
 }
 .cardd3{
     border-radius: 8px;
     background-color: white;
-    padding: 0px 0px;
+    padding: 0px 0px 40px 0px;
     margin: 0px 0px;  
     height: 100%;
 }
@@ -563,4 +538,50 @@ p4{float: right;}
 }
 #photo:hover{
     filter: grayscale(0);
+}
+.play {
+    content: "";
+    position: absolute;
+    left: 17%;
+    top: 80%;
+    z-index: 2;
+    color: white;
+    font-size: 24px;
+}
+
+.playButton {
+    background-color: #f58a07;
+    color: white;
+    border-radius: 20px;
+}
+.play-vdo{
+    position: relative;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+.play-vdo::after{
+    background-image: url(/images/play-icon.svg);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    left: 11%;
+    top: 84%;
+    z-index: 2;
+}
+.play-vdo::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    border: 10px circle;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
 }

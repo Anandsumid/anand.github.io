@@ -21,7 +21,6 @@ window.addEventListener('scroll', scrollDetect)
 
 
 // Define Play button variable
-
 // Create a modal with a single line of JavaScript: https://getbootstrap.com/docs/5.1/components/modal/#via-javascript
 // Define finsetModal then use Bootstrap modal Object request
 
@@ -29,7 +28,15 @@ window.addEventListener('scroll', scrollDetect)
 // Create Click Event Listener on Play button variable (you already created above)
 // add finsetModal.show() on callback function
 // Select '.modal-body' class from finsetModal variable then use innerHTML method and add Youtube embed code
-
+const playButton = document.getElementById("clickVideo");
+var finsweetModal = new bootstrap.Modal(document.getElementById('uploadSong'), {
+    backdrop: "static",
+    keyboard: true,
+})
+playButton.addEventListener("click", () => {
+    finsweetModal.show()
+    document.getElementsByClassName("modal-body")[0].innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/hsloED24DjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+})
 
 
 // Create an XMLHttpRequest object
@@ -99,14 +106,36 @@ latestblog.onreadystatechange = function(){
 }
 latestblog.send()
 
+
 /*  Add subscription email action. When subscription POST request is successful, 
     change the email element and subscribe button into "Your subscription is successful" Text. 
     POST request should be done by AJAX request. We need a POST request end point for subscription email. 
 */
-var subscribe= document.getElementById('subscribe')
+
 // Define Subscribe by ID name
-subscribe.addEventListener('click',()=>{
-    
+const subscribe = document.getElementById('subscribe')
+subscribe.addEventListener('click', () => {
+    var submitEmail = document.getElementById('email').value
+    const URL = "http://52.221.191.153/subscribe/subscription/create";
+    const requestOptions = {
+        method: 'POST',
+        body: JSON.stringify({
+            "email": `${submitEmail}`
+        }),
+        headers: {
+            "Content-Type": "application/json",
+        }
+    }
+
+    fetch(URL, requestOptions).then(res => res.json())
+        .then(res => {
+            console.log(res.message)
+        })
+
+
+        .then(function (data) {
+            console.log(data)
+        })
 })
 // Add CLICK Event Listener on the button
-// Then using Fetch method POST input value to http://52.221.191.153/subscribe/subscription/create 
+// Then using Fetch method POST input value to http://52.221.191.153/subscribe/subscription/create
