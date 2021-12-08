@@ -129,12 +129,7 @@ subscribe.addEventListener('click', () => {
 
     fetch(URL, requestOptions).then(res => res.json())
         .then(res => {
-            console.log(res.message)
-        })
-
-
-        .then(function (data) {
-            console.log(data)
+            alert(res.message)
         })
 })
 // Add CLICK Event Listener on the button
